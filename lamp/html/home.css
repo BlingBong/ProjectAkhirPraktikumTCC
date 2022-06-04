@@ -1,0 +1,285 @@
+body {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+hr {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #eeeeee -moz-use-text-color #ffffff;
+    border-style: solid none;
+    border-width: 1px 0;
+    margin: 18px 0;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background: #e5e5e5;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.panel {
+    background: #23384d;
+    width: 270px;
+    height: 130vh;
+    color: white;
+    position: fixed;
+    text-align: center;
+    z-index: 300;
+    border-radius: 0px 20px 20px 0px;
+    border: 2px solid black;
+    box-shadow: 1px 1px 10px 1px black;
+}
+
+.profileImg {
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 150px !important;
+    height: 150px;
+    flex-shrink: 0;
+}
+
+.reportText {
+    margin: 20px auto;
+    width: 800px;
+    text-align: left;
+    font-size: 4rem;
+    border-bottom: 2px solid black;
+}
+
+.profileText {
+    margin-top: 20px;
+    font-size: 3rem;
+}
+
+.search {
+    height: 40px;
+    padding-bottom: 50px !important;
+}
+
+#search:focus {
+    outline: none;
+}
+
+/* input[type=file] {
+    color: transparent;
+  } */
+
+#search {
+    background-color: transparent;
+    border: 0px solid;
+    height: 20px;
+    width: 160px;
+    color: #ccc;
+}
+
+.buttonPanel {
+    background-color: transparent;
+    border: 0px solid;
+    height: 40px;
+    width: 100%;
+    color: #ccc;
+}
+
+.buttonLogout {
+    background-color: #d41c49;
+    color: white;
+    font-family: Roboto;
+    border: 3px solid #ff8c8c;
+    border-radius: 30px;
+    padding: 5px;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    width: 250px;
+}
+
+button:focus {
+    outline-style: none;
+}
+
+.menuPanel h1 {
+    font-size: 2rem;
+    margin: 20px auto;
+    font-family: sans-serif;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    box-shadow: 0px 1.2px 5px 1px black;
+    cursor: pointer;
+}
+
+.box {
+    background: white;
+    flex-shrink: 0;
+    /* width: 300px; */
+    height: 140px;
+    border: 3px solid black;
+    margin: 0px 10px;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0px 1.2px 2px 1px black;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.boxImg {
+    flex-grow: 1;
+    width: 130px;
+    height: 130px;
+    margin-left: -50px;
+    flex-shrink: 0;
+    margin-top: -9px;
+    background-color: grey;
+    border: 1px solid white;
+    border-radius: 80px;
+}
+
+.boxContent {
+    margin: auto !important;
+    display: flex;
+    flex-shrink: 0;
+    letter-spacing: 2px;
+}
+
+.contentText {
+    margin: auto;
+    flex-grow: 1;
+    font-size: 3rem;
+    z-index: 50;
+}
+
+.jobBox {
+    flex-shrink: 0;
+    /* width: 300px; */
+    height: fit-content;
+    border: 2px solid black;
+    margin: 20px 5px;
+    border-radius: 20px;
+    padding: 10px 5px;
+    /* box-shadow: 0px 1.2px 2px 1px black; */
+    z-index: 5;
+    overflow: hidden;
+    display: flex;
+}
+
+.jobHeader {
+    flex-shrink: 0;
+    margin: auto 0px;
+    border-right: 1px solid black;
+    padding: 0px 20px 0px 0px;
+    width: 220px;
+}
+
+.jobContent {
+    margin: auto 0px;
+    padding: 0px 0px 0px 20px;
+    overflow: auto;
+}
+
+.jobContent::-webkit-scrollbar {
+    height: 5px;
+}
+
+.frontBox {
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    overflow: auto;
+    /* padding-right: 0px;
+    margin-right: 0px;
+    flex-basis: 100%;
+    width: 100vw; */
+}
+
+.frontBox::-webkit-scrollbar {
+    height: 5px;
+}
+
+.panelOption {
+    transition: 0.6s;
+    font-size: 2rem;
+}
+
+.active {
+    background: blue;
+    color: white;
+}
+
+.buttonReport {
+    transition: 0.5s;
+    font-family: sans-serif;
+}
+
+.buttonReport:hover {
+    transition: 0.5s;
+    color: white;
+    background: blue;
+}
+
+#profilePic {
+    transition: 1s;
+}
+
+/* #profilePic:hover{
+    content: "Add Picture";
+    background: black;
+  } */
+/* .tableData th, td{
+    border: 1px solid black;
+    text-align: center;
+  }
+
+  .tableData{
+    border-radius: 20px;
+  } */
+
+.tableDataTipe th {
+    width: 200px;
+    background-color: green;
+    border: 1px solid black;
+    font-size: 2rem;
+}
+
+.tableDataTipe td {
+    width: 200px;
+    border: 1px solid black;
+    font-size: 2rem;
+}
+
+.tableDataProduk th {
+    width: 200px;
+    background-color: green;
+    border: 1px solid black;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.tableDataProduk td {
+    width: 200px;
+    border: 1px solid black;
+    font-size: 1rem;
+}
